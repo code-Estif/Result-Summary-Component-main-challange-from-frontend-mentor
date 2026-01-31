@@ -117,17 +117,17 @@ body {
 
 /* Official category colors */
 .summary li.reaction {
-  background: hsla(0, 100%, 67%, 0.1);
+  background: hsla(0, 100%, 80%, 0.1);
   color: hsl(0, 100%, 67%);
 }
 
 .summary li.memory {
-  background: hsla(39, 100%, 56%, 0.1);
+  background: hsla(39, 100%, 77%, 0.1);
   color: hsl(39, 100%, 56%);
 }
 
 .summary li.verbal {
-  background: hsla(166, 100%, 37%, 0.1);
+  background: hsla(166, 100%, 86%, 0.1);
   color: hsl(166, 100%, 37%);
 }
 
