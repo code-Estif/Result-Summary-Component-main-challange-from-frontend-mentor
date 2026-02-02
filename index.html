@@ -1,36 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Preview Card</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main class="card">
-    <picture class="card-img">
-      <source srcset="images/image-product-desktop.jpg" media="(min-width: 768px)">
-      <img src="images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum">
-    </picture>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <section class="card-content">
-      <p class="product-category">Perfume</p>
-      <h1 class="product-title">Gabrielle Essence Eau De Parfum</h1>
-      <p class="product-description">
-        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-        Perfumer-Creator for the House of CHANEL.
-      </p>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css"/>
 
-      <div class="price">
-        <span class="discounted-price">$149.99</span>
-        <span class="original-price">$169.99</span>
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="results-card">
+        <!-- Result panel (left) -->
+        <section class="result-panel">
+          <h2 class="result-heading">Your Result</h2>
+
+          <div class="score-wrap">
+            <div class="score-circle">
+              <p class="score-number">
+                76 <span class="score-max">of 100</span>
+              </p>
+            </div>
+          </div>
+
+          <p class="result-text">
+            <span class="result-title">Great</span>
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </section>
+
+        <!-- Summary panel (right) -->
+        <section class="summary-panel">
+          <h2 class="summary-heading">Summary</h2>
+
+          <div class="category-row is-reaction">
+            <div class="category-name">
+              <img
+                src="./assets/images/icon-reaction.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>Reaction</span>
+            </div>
+            <div class="category-score">
+              <span class="score-value">80</span>
+              <span class="score-total">/ 100</span>
+            </div>
+          </div>
+
+          <div class="category-row is-memory">
+            <div class="category-name">
+              <img
+                src="./assets/images/icon-memory.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>Memory</span>
+            </div>
+            <div class="category-score">
+              <span class="score-value">80</span>
+              <span class="score-total">/ 100</span>
+            </div>
+          </div>
+
+          <div class="category-row is-verbal">
+            <div class="category-name">
+              <img
+                src="./assets/images/icon-verbal.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>Verbal</span>
+            </div>
+            <div class="category-score">
+              <span class="score-value">80</span>
+              <span class="score-total">/ 100</span>
+            </div>
+          </div>
+
+          <div class="category-row is-visual">
+            <div class="category-name">
+              <img
+                src="./assets/images/icon-visual.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>Visual</span>
+            </div>
+            <div class="category-score">
+              <span class="score-value">80</span>
+              <span class="score-total">/ 100</span>
+            </div>
+          </div>
+
+          <button class="btn" type="button">Continue</button>
+        </section>
       </div>
-
-      <button class="add-to-cart">
-        <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>
-        Add to Cart
-      </button>
-    </section>
-  </main>
-</body>
+    </div>
+  </body>
 </html>
